@@ -1,0 +1,32 @@
+# Nmap 7.70 scan initiated Thu Sep 26 10:15:20 2019 as: nmap -sC -sV -oN nmap --script vuln -v -p80,7744 192.168.56.47
+Nmap scan report for 192.168.56.47 (192.168.56.47)
+Host is up (0.00029s latency).
+
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.10 ((Debian))
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /wp-login.php: Possible admin folder
+|   /readme.html: Wordpress version: 2 
+|   /wp-includes/images/rss.png: Wordpress version 2.2 found.
+|   /wp-includes/js/jquery/suggest.js: Wordpress version 2.5 found.
+|   /wp-includes/images/blank.gif: Wordpress version 2.6 found.
+|   /wp-includes/js/comment-reply.js: Wordpress version 2.7 found.
+|   /wp-login.php: Wordpress login page.
+|   /wp-admin/upgrade.php: Wordpress login page.
+|_  /readme.html: Interesting, a readme.
+|_http-server-header: Apache/2.4.10 (Debian)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-wordpress-users: 
+| Username found: admin
+| Username found: tom
+| Username found: jerry
+|_Search stopped at ID #25. Increase the upper limit if necessary with 'http-wordpress-users.limit'
+7744/tcp open  ssh     OpenSSH 6.7p1 Debian 5+deb8u7 (protocol 2.0)
+MAC Address: 08:00:27:61:A6:69 (Oracle VirtualBox virtual NIC)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 10:16:00 2019 -- 1 IP address (1 host up) scanned in 39.46 seconds
