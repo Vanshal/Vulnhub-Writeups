@@ -1,5 +1,7 @@
 <h1>DC-2 Write-up</h1>
 
+**NMAP** : [Click Me](https://github.com/Vanshal/Vulnhub-Writeups/blob/master/DC-2/nmap.txt)
+
 Add 192.168.56.47   dc-2 to your host file to access WEB 
 
 **FLAG** : http://dc-2/index.php/flag/
