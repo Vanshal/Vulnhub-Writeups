@@ -6,8 +6,6 @@
 PORT    STATE SERVICE     VERSION
 22/tcp  open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1.2 (protocol 2.0)
 80/tcp  open  http        Apache httpd 2.2.8 ((Ubuntu) PHP/5.2.4-2ubuntu5.6 with Suhosin-Patch)
-139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
 ```
 
 On Port 80 Lotus Cms is running so i googled for Exploit :
