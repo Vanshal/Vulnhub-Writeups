@@ -29,3 +29,4 @@ Password : **h4ckm3**
 
 Exploit : https://www.exploit-db.com/exploits/5092
 
+![alt text](https://raw.githubusercontent.com/Vanshal/Vulnhub-Writeups/master/pWnOS%3A%201.0/images/24.png)
